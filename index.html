@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경원재 앰배서더 인천 Clone -jkt-</title>
+
+    <link rel="icon" href="./img/favicon.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <script src="./js/aos.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- common header -->
+    <header>
+        <div class="header-container">
+            <ul class="gnb">
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="./img/logo.png" alt="경원재 로고">
+                    </a>
+                </li>
+                <li><a href="javascript:void(0)"> 호텔 소개</a></li>
+                <li><a href="javascript:void(0)">객실</a> </li>
+                <li><a href="javascript:void(0)">레스토랑</a> </li>
+                <li><a href="javascript:void(0)">웨딩&가족연회</a> </li>
+                <li><a href="javascript:void(0)">미팅</a> </li>
+                <li><a href="javascript:void(0)">편의시설</a> </li>
+                <li><a href="javascript:void(0)">스페셜 오퍼</a> </li>
+                <li><a href="javascript:void(0)">멤버십</a> </li>
+                <li id="menuToggle">
+                    <i id="barsIcon" class="xi-bars xi-3x"></i>
+                    <i id="closeIcon" class="xi-close xi-3x"></i>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- mobile nav -->
+    <div class="wrap">
+        <div id="mobileMenu" class="m-header-container" style="display: none;">
+            <ul class="m-gnb">
+                <li><a href="javascript:void(0)"> 호텔 소개</a></li>
+                <li><a href="javascript:void(0)">객실</a> </li>
+                <li><a href="javascript:void(0)">레스토랑</a> </li>
+                <li><a href="javascript:void(0)">웨딩&가족연회</a> </li>
+                <li><a href="javascript:void(0)">미팅</a> </li>
+                <li><a href="javascript:void(0)">편의시설</a> </li>
+                <li><a href="javascript:void(0)">스페셜 오퍼</a> </li>
+                <li><a href="javascript:void(0)">멤버십</a> </li>
+            </ul>
+        </div>
+        <!-- section 01 -->
+        <section class="main">
+            <video src="img/main_video.mp4" autoplay loop muted></video>
+            <div class="booking">
+                <ul class="check">
+                    <li>CHECK IN / OUT</li>
+                    <li>
+                        <form>
+                            <label for="todayDate"></label>
+                            <input type="date" id="todayDate">
+                        </form>
+                    </li>
+                    <li>-</li>
+                    <li>
+                        <form>
+                            <label for="tomorrowDate"></label>
+                            <input type="date" id="tomorrowDate">
+                        </form>
+                    </li>
+                    <li>
+                        <p>ROOM</p>
+                        <p><input type="number" min="1" value="1" inputmode="numeric"></p>
+                    </li>
+                    <li>
+                        <p>ADULT</p>
+                        <p><input type="number" min="1" value="1" inputmode="numeric"></p>
+                    </li>
+                    <li>
+                        <p>CHILDREN</p>
+                        <p><input type="number" min="1" value="1" inputmode="numeric"></p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="javascript:void(0)">SEARCH</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+        <!-- section 02 -->
+        <section class="specialoffer">
+            <div class="title" data-aos="fade-up">
+                <h3>DELIGHTFUL DISCOVERY</h3>
+                <p>대한민국 명장들의 손길이 느껴지는 객실에서 안락한 서비스를 경험해 보시기 바랍니다.</p>
+            </div>
+            <div class="specialoffer-package-wrapper">
+                <h3>PACKAGE</h3>
+                <div class="specialoffer-wrap">
+                    <div class="specialoffer-img" data-aos="fade-right">
+                        <a href="javascript:void(0)">
+                            <img src="./img/package_bird.png" alt="LAZY MORNING img">
+                        </a>
+                    </div>
+                    <div class="specialoffer-txt" data-aos="fade-left">
+                        <p>LAZY MORNING (레이지 모닝)</p>
+                        <p>조금은 길고 느리게</p>
+                        <p>경원재에서 여유로운 호캉스를 즐겨보세요.</p>
+                    </div>
+                </div>
+                <div class="specialoffer-wrap">
+                    <div class="specialoffer-txt" data-aos="zoom-in">
+                        <p>힐링 스테이 (HEALING STAY)</p>
+                        <p>한옥으로 떠나는 건강한 휴식 여행!</p>
+                        <p>일상 속 지친 몸과 마음을 다독이는 시간을 가져보세요.</p>
+                    </div>
+                    <div class="specialoffer-img" data-aos="zoom-in">
+                        <a href="javascript:void(0)">
+                            <img src="./img/package_Wellness.png" alt="Wellness img">
+                        </a>
+                    </div>
+                </div>
+                <div class="specialoffer-wrap">
+                    <div class="specialoffer-img" data-aos="zoom-in-up">
+                        <a href="javascript:void(0)">
+                            <img src="./img/package_Memorable.png" alt="Memorable img">
+                        </a>
+                    </div>
+                    <div class="specialoffer-txt" data-aos="zoom-in-up">
+                        <p>Memorable moment</p>
+                        <p>소중한 사람과 잊지 못할 순간을 남겨보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 03 -->
+        <section class="event">
+            <div class="title" data-aos="fade-up">
+                <h3>EVENT or PROMOTION</h3>
+                <p>인천시민 할인 안내</p>
+            </div>
+            <div class="event-wrap">
+                <img src="./img/event_bg.png" alt="event">
+                <div class="event-txt" data-aos="zoom-out">
+                    <p>GYEONGWONJAE</p>
+                    <p>AMBASSADOR INCHEON</p>
+                    <p>2023-01-01 - 2024-12-31</p>
+                </div>
+                <div class="event_box" data-aos="fade-up" data-aos-duration="3000">
+                    <p>특별한 가격으로 경원재를 경험해보세요.</p>
+                    <a href="javascipr:void(0)">자세히 보기</a>
+                </div>
+            </div>
+        </section>
+        <!-- section 04 -->
+        <section class="rooms">
+            <div class="rooms-title title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <h3>DELIGHTFUL DISCOVERY</h3>
+                <p>대한민국 명장들의 손길이 느껴지는 객실에서 안락한 서비스를 경험해 보시기 바랍니다.</p>
+                <div class="rooms-etc">
+                    <ul>
+                        <li>ROOMS</li>
+                        <li>/</li>
+                        <li>SUITES</li>
+                        <li>/</li>
+                        <li>KIDS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide s1">
+                        <h2>Deluxe</h2>
+                    </div>
+                    <div class="swiper-slide s2">
+                        <h2>Deluxe Suite</h2>
+                    </div>
+                    <div class="swiper-slide s3">
+                        <h2>Royal Suite</h2>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="xi-arrow-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="xi-arrow-right"></i>
+                </div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="rooms-aside">
+                <h3>커다란 대문, 넓은 잔디 마당과 툇마루까지 갖춘 별채 형태의 객실</h3>
+                <p>면적 95.04㎡ (28.75평) (마당 포함 시 약 150㎡)</p>
+            </div>
+        </section>
+        <!-- section 05 -->
+        <section class="moments">
+            <div class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <h3>JOURNEY TO DELIGHTFUL MOMENTS</h3>
+                <p>비움과 사색의 공간 경원재 앰배서더 인천</p>
+            </div>
+            <div class="btn" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <ul>
+                    <li>예약하기</li>
+                    <li>호텔뉴스</li>
+                </ul>
+            </div>
+        </section>
+        <!-- section 06 -->
+        <div class="meeting">
+            <div class="title" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h3>MEETING</h3>
+                <p>고풍스러운 한옥에서 호텔 연회전문팀이 세련되고 기품있는 행사를 만들어드립니다.</p>
+            </div>
+            <div class="meeting-box-wrap" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <ul class="meeting-box">
+                    <li>Yeongbingwan</li>
+                    <li>은은한 소나무 향을<br> 느낄 수 있는 전통느낌의 연회장</li>
+                    <li>자세히 보기 →</li>
+                </ul>
+                <ul class="meeting-box">
+                    <li>Courtyard </li>
+                    <li>신도시의 스카이라인과 고즈넉한<br> 한옥을 병풍삼아 탁 트인 넓은 마당</li>
+                    <li>자세히 보기 →</li>
+                </ul>
+                <ul class="meeting-box">
+                    <li>Executive Room</li>
+                    <li>성공적인 비즈니스를 위한 <br> 편안한 분위기의 독립적인 회의실</li>
+                    <li>자세히 보기 →</li>
+                </ul>
+                <ul class="meeting-box">
+                    <li>Arirang Hall</li>
+                    <li>연회장 밖에는 넓은 로비도 <br> 마련되어 있어 자유롭게 이용가능합니다.</li>
+                    <li>자세히 보기 →</li>
+                </ul>
+            </div>
+        </div>
+        <!-- section 07 -->
+        <section class="membership">
+            <div class="title" data-aos="fade-up">
+                <h3>Ambassador Membership</h3>
+                <p>엠배서더호텔 멤버십 프로그램은 품격있는 라이프스타일과 특별한 경험을 제안합니다.<br>
+                    엠배서더클럽 회원이 되셔서 다채로운 혜택과 최상의 서비스를 누려보세요.</p>
+            </div>
+            <div class="btn" data-aos="fade-up">
+                <ul>
+                    <li>VIEW MORE & JOIN</li>
+                </ul>
+            </div>
+        </section>
+        <!-- section 08 -->
+        <section class="location">
+            <h2>LOCATION</h2>
+            <div class="location-wrap">
+                <ul class="public">
+                    <h3>대중교통으로 오시는 길</h3>
+                    <ul>
+                        <li>네비게이션</li>
+                        <li>도로명 주소: 인천광역시 연수구 테크노파크로 200</li>
+                        <li>구 주소: 인천광역시 연수구 송도동 24-9번지</li>
+                        <li>지하철</li>
+                        <li>인천 지하철 1호선 센트럴파크역 3번 출구 (도보 3분)</li>
+                        <li>버스</li>
+                        <li>센트럴파크역 하차 : 순환41, 급행91, 98, M6405(강남역), M6450(삼성역), M6751(공덕역)</li>
+                        <li>인천대입구역 하차 : 16, 8, 58, 순환42, 순환43, 급행99, 3002(광명역)</li>
+                        <li>경제자유구역청 하차 : 1300(서울역, 홍대입구역), 82</li>
+                    </ul>
+                </ul>
+                <ul class="airport">
+                    <h3>공항에서 오시는 길</h3>
+                    <ul>
+                        <li>김포국제공항</li>
+                        <li>자가용 / 택시 이용시 : 공항 → 봉오대로 → 경인고속도로 → 인천타워대로 (약 50분 소요 / 37km)</li>
+                        <li>인천국제공항</li>
+                        <li>6777번 버스 (임시 운영 중단) : 제 1 여객터미널 1층 2A 또는 13A 게이트 / 제 2 여객터미널 지하 1층 17 게이트에서 탑승 →<br> 송도
+                            센트럴파크 경원재 앰배서더 정류장에서 하차편도요금 : 7,000원 / 약 30분 소요 (29km)</li>
+                        <li>자가용 / 택시 이용시 : 공항 → 인천대교 → 송도 국제도시약 30분 소요 / 29km</li>
+                    </ul>
+
+                </ul>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-logo">
+                    <p>AMBASSADOR</p>
+                    <p>HOTEL GROUP</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-info0">
+                        <ul>
+                            <li>이용약관</li>
+                            <li>이메일무단수집금지</li>
+                            <li>개인정보처리방침</li>
+                        </ul>
+                    </div>
+                    <div class="footer-info1">
+                        <ul>
+                            <li>인천광역시 연수구 테크노파크로 200</li>
+                            <li>대표 이원재</li>
+                            <li>T. 032-729-1101</li>
+                        </ul>
+                    </div>
+                    <div class="footer-info2">
+                        <ul>
+                            <li>사업자등록번호 379-83-00011</li>
+                            <li> 통신판매신고번호 인천연수구0193호</li>
+                        </ul>
+                    </div>
+                    <p>Copyright (c) 2023 Ambassador Hotel Group. All rights reserved.</p>
+                </div>
+                <div class="footer-family">
+                    <ul>
+                        <li>
+                            <select name="fm-site">
+                                <option value="">FAMILY SITES</option>
+                                <option value="앰배서더 서울 풀만">앰배서더 서울 풀만</option>
+                                <option value="머큐어 앰배서더 울산">머큐어 앰배서더 울산</option>
+                                <option value="이비스 앰배서더 수원">이비스 앰배서더 수원</option>
+                                <option value="몬드리안 서울 이태원">몬드리안 서울 이태원</option>
+                            </select>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header-container");
+            header.classList.toggle("scrolled", window.scrollY > 0);
+        });
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var todayDateInput = document.getElementById('todayDate');
+        var tomorrowDateInput = document.getElementById('tomorrowDate');
+
+
+        var today = new Date();
+        var todayDateString = today.toISOString().substring(0, 10);
+        todayDateInput.value = todayDateString;
+
+
+        var tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        var tomorrowDateString = tomorrow.toISOString().substring(0, 10);
+        tomorrowDateInput.value = tomorrowDateString;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuToggle = document.getElementById("menuToggle");
+            var mobileMenu = document.getElementById("mobileMenu");
+
+            menuToggle.addEventListener("click", function () {
+                // mobileMenu 토글
+                if (mobileMenu.style.display === "block") {
+                    mobileMenu.style.display = "none";
+                    // barsIcon로 변경
+                    document.querySelector("#barsIcon").style.display = "inline-block";
+                    document.querySelector("#closeIcon").style.display = "none";
+                } else {
+                    mobileMenu.style.display = "block";
+                    // closeIcon로 변경
+                    document.querySelector("#barsIcon").style.display = "none";
+                    document.querySelector("#closeIcon").style.display = "inline-block";
+                }
+            });
+
+            // 윈도우 크기가 640px 이상이면 모바일 메뉴 닫기
+            window.addEventListener("resize", function () {
+                if (window.innerWidth > 640) {
+                    mobileMenu.style.display = "none";
+                    // barsIcon으로 변경
+                    document.querySelector("#barsIcon").style.display = "inline-block";
+                    document.querySelector("#closeIcon").style.display = "none";
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+
+</html>
